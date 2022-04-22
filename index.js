@@ -11,7 +11,7 @@ document.querySelector('#drink-form').addEventListener('submit', (e) => {
     }
     addDrink(drink)
 })
-
+//making drink an object and posting it to local server
 function addDrink(drink){
     const configObj = {
       method: 'POST',
@@ -26,7 +26,7 @@ function addDrink(drink){
   
     .then(drink => {
         console.log(drink)
-
+//adding drink name to the favorite list on the DOM
         const div = document.createElement('div');
         const p = document.createElement('p');
         const deleteBtn = document.createElement('button');
@@ -72,7 +72,7 @@ document.querySelector('#search-form').addEventListener('submit', function(e){
     const input = document.querySelector('#searchInput').value;
     searchDrink(input)
 })
-
+//fetching drinks name and pictures from API and appending it to the search results
 function searchDrink(drink){
     const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`
     fetch(url)
@@ -111,7 +111,7 @@ function renderDOM(){
 }
 
 
-
+//function to delete drinks from favorite list
 function deleteDrink(drink) {
     console.log(this.parentElement)
     this.parentElement.remove()
@@ -128,7 +128,7 @@ function deleteDrink(drink) {
 }
 
 
-
+//function init() makes favorite list persistent
 function init(){
     fetch('http://localhost:3000/posts')
     .then(resp => resp.json())
