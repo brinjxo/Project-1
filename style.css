@@ -1,3 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Lato:wght@100;300&display=swap');
 *{
-add styling here 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+h1 {
+    color: #fafafa;
+    font-family: 'Codystar', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    }
+    
+body {
+    background: rgb(218,239,244);
+background: radial-gradient(circle, rgba(218,239,244,1) 0%, rgba(170,186,194,1) 100%);
+font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+.ex2 .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ex2 .box {
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+  }
+.container{ max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgb(180, 197, 205);
+    text-align: center;
+    border-style: gradient;
+
+}
+#cocktail {
+   
+    font-size: large;
+}
+
+#cocktail img{
+    width: 100%;
+    border-radius: 1%;
+    
+}
+
+#results img{
+    border: 1px #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px; ;
+}
+
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #88a99c;
+    border: none;
+    color: white;
+    padding: 1px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
